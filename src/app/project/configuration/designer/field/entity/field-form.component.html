@@ -1,8 +1,0 @@
-<form nz-form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <app-form-field-detail *ngFor="let field of fields" [field]="field" [form]="form"></app-form-field-detail>
-  <nz-form-item>
-    <nz-form-control>
-      <button nz-button type="submit" [disabled]="!form.valid" nzType="primary" [nzSize]="'large'">提交</button>
-    </nz-form-control>
-  </nz-form-item>
-</form>

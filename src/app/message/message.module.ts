@@ -3,10 +3,12 @@ import { MessageComponent } from './message.component';
 import { MessageTocComponent } from './toc/toc.component';
 import { AppSharedModule } from '../app-shared.module';
 import { MessageChatComponent } from './chat/chat.component';
+import { MessageRoutingModule } from './message.router';
 
 @NgModule({
     imports: [
-        AppSharedModule
+        AppSharedModule,
+        MessageRoutingModule
     ],
     declarations: [
         MessageComponent,
